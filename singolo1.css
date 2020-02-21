@@ -73,3 +73,49 @@ nav ul .drop {
 nav ul li a:hover {
     color: #f06c64;
 }
+
+.slaider {
+    position: relative;
+    height: 594px;
+    background-color: #f06c64;
+    border-bottom: solid 5px #ea676b;
+    
+}
+
+.arrow-left {
+    display: inline-block;
+    position: absolute;
+    margin-top: 280px;
+    margin-left: 42px;
+}
+  
+.iPhone-vertical {
+    display: inline-block;
+    position: absolute;
+    margin-left: 112px;
+    margin-top: 52px;
+}
+  
+.iPhone-horizontal {
+    display: inline-block;
+    position: absolute;
+    margin-left: 425px;
+    margin-top: 173px;
+}
+  
+.arrow-right {
+    display: inline-block;
+    position: absolute;
+    margin-top: 280px;
+    right: 40px;
+}
+  
+.arrow-left:hover {
+    cursor: pointer;
+    width: 20px;
+}
+  
+.arrow-right:hover {
+    cursor: pointer;
+    width: 20px;
+}
