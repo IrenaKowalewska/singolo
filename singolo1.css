@@ -107,7 +107,7 @@ nav ul li a:hover {
     display: inline-block;
     position: absolute;
     margin-top: 280px;
-    right: 40px;
+    margin-left: 965px;
 }
 
 .arrow-left:hover {
