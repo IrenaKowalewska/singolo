@@ -151,7 +151,7 @@ body {
     height: 20px;
     border-radius: 100%;
     border-radius: 100%;
-    background-color: rgb(89, 158, 226, .6);
+    background-color: rgba(16, 128, 240, 0.4);
     cursor: pointer;
 }
 
