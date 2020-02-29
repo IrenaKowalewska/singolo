@@ -73,7 +73,6 @@ body {
 }
 
 .portfolio .projects img {
-    /* display: block; */
     width: 220px;
     height: 187px;
     margin-bottom: 20px;
@@ -146,7 +145,6 @@ body {
 }
 
 .about-us .wrapper-photo .link-social:hover {
-    border-radius: 100%;
     width: 20px;
     height: 20px;
     border-radius: 100%;
