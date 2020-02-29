@@ -73,10 +73,16 @@ body {
 }
 
 .portfolio .projects img {
-    display: block;
+    /* display: block; */
     width: 220px;
+    height: 187px;
     margin-bottom: 20px;
-   
+
+}
+
+.portfolio .projects img:hover {
+    transform: scale(1.03);
+    cursor: pointer;
 }
 
 .about-us {
@@ -135,6 +141,7 @@ body {
 }
 
 .about-us .wrapper-photo .link-social {
+   text-align: center;
    padding: 6px;
 }
 
@@ -142,11 +149,9 @@ body {
     border-radius: 100%;
     width: 20px;
     height: 20px;
-    background-color: blue;
+    border-radius: 100%;
+    border-radius: 100%;
+    background-color: rgb(89, 158, 226, .6);
     cursor: pointer;
 }
 
-.blue {
-    background-color: blue;
-    height: 80px;
-}
