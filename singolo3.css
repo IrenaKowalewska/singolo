@@ -230,3 +230,10 @@ body {
     background-color: rgba(16, 128, 240, 0.4);
     cursor: pointer;
 }
+
+.footer .copyright {
+    margin-top: -4px;
+    font-weight: 300;
+    font-size: 12px;
+    color: white;
+}
