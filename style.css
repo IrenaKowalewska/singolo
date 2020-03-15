@@ -42,6 +42,10 @@ header {
     color: #f06c64;
 }
 
+.header-active {
+    color: #f06c64;
+}
+
 nav ul {
     display: flex;
     padding: 0;

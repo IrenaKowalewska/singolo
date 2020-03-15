@@ -13,23 +13,23 @@
         <header>
             <div class="wrapper">
                 <div class="logo"><h1>SINGOLO<span>*</span></h1></div>
-                <nav>
+                <nav id="header-nav">
                     <ul>
-                        <li> <a href="#">HOME </a> </li>
+                        <li> <a class="header-active" href="#home">HOME </a> </li>
                         <li class="drop">·</li>
-                        <li> <a href="#">SERVICES</a> </li>
+                        <li> <a href="#services">SERVICES</a> </li>
                         <li class="drop">·</li>
-                        <li> <a href="#">PORTFOLIO</a> </li>
+                        <li> <a href="#portfolio">PORTFOLIO</a> </li>
                         <li class="drop">·</li>
-                        <li> <a href="#">ABOUT</a> </li>
+                        <li> <a href="#about">ABOUT</a> </li>
                         <li class="drop">·</li>
-                        <li> <a href="#">CONTACT</a> </li>
+                        <li> <a href="#contact">CONTACT</a> </li>
                     </ul>
                 </nav>
             </div>
         </header>
         <main>
-            <section class="screen">
+            <section class="screen" id="home">
                 <div class="slaider">
                     <img src="assets/img/arrow-1.png" class="arrow-left">
                 <img src="assets/img/iPhone_Vertical.png" class="iPhone-vertical">
@@ -37,7 +37,7 @@
                 <img src="assets/img/arrow-2.png" class="arrow-right">
                 </div>
             </section>
-            <section class="services">
+            <section class="services" id="services">
                 <div class="header">
                     Our Services
                 </div>
@@ -101,7 +101,7 @@
                     </div>
                 </div>
             </section>
-            <section class="portfolio">
+            <section class="portfolio" id="portfolio">
                 <div class="label">Portfolio</div>
                 <div class="label-text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</div>
                 <div class="portfolio-nav">
@@ -127,7 +127,7 @@
                   <img src="assets/img/img-portfolio/project12.png" alt="project">  
                 </div>
             </section>
-            <section class="about-us">
+            <section class="about-us" id="about">
                 <div class="label">About Us</div>
                 <div class="label-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</div>
                 <div class="wrapper-photo">
@@ -172,7 +172,7 @@
                     </div>
                 </div>
             </section>
-            <section class="feedback">
+            <section class="feedback" id="contact">
                 <div class="form-title">Get a Quote</div>
                 <div class="form-descr">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</div>
                     <div class="feedback-form">
@@ -215,5 +215,6 @@
             </div>
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
