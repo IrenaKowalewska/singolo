@@ -178,8 +178,8 @@
                     <div class="feedback-form">
                         <form class="form-in-touch">
                             <fieldset class="fieldset">
-                                <input type="text" class="input-name" name="name" id="name" placeholder="Name (Required)" required>
-                                <input type="text" class="input-email" name="email" id="email" placeholder="Email (Required)" required>
+                                <input type="text" class="input-name" name="name" id="name" placeholder="Name (Required)" required pattern="^[a-zA-Z]+$">
+                                <input type="text" class="input-email" name="email" id="email" placeholder="Email (Required)" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                                 <input type="text" class="input-subject" name="subject" id="subject" placeholder="Subject">
                                 <textarea class="textarea" name="textarea" id="textarea" placeholder="Describe your project in detail..."></textarea>
                             </fieldset>
