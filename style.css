@@ -230,6 +230,10 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
+.portfolio .portfolio-active {
+    color: #c5c5c5;
+    border-color: #c5c5c5;
+}
 
 .portfolio a:hover, a:active {
     color: white;
