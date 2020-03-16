@@ -207,60 +207,54 @@ nav ul li a:hover {
     font-weight: 300;
 }
 
-.portfolio .portfolio-nav ul {
+.portfolio .tags {
     display: flex;
-    justify-content: start;
-    margin-left: -38px;
+    text-align: justify;
+	padding-top: 15px;	
 }
 
-.portfolio .portfolio-nav ul li {
-    list-style: none;
-    margin-right: 11px;
-
+.tag{
+	font-size: 12px;
+	color: #767e9e;
+	font-weight: 400;
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 2px 6px;
+    border: 1px solid #666d89;
+	border-radius: 5px;
+	
+}
+.tag:hover{
+	text-decoration: underline;
+	color: #ffffff;
 }
 
-.portfolio a {
-    color: #767e9e;
-    font-size: 12px;
-    font-weight: 400;
-    border: 1px solid #767e9e;
-    border-radius: 5px;
-    padding: 3px 5px 3px 6px;
-    text-decoration: none;
+.tag-selected {
+	border: 1px solid #c5c5c5;
+	color: #dedede;
+}
+
+.portfolio-image {
+	box-sizing: border-box;
+	width: 220px;
+    height: 187px;
+    margin-bottom:20px;
     cursor: pointer;
 }
 
-.portfolio .portfolio-active {
-    color: #c5c5c5;
-    border-color: #c5c5c5;
-}
-
-.portfolio a:hover, a:active {
-    color: white;
-    border: 1px solid white;
-    border-radius: 5px;
-}
-
-.portfolio .projects {
+.portfolio-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content:center;
-    margin-top: 23px;
+    margin-top: 20px;
 }
 
-.portfolio .projects img:nth-child(n+13) {
+.portfolio-container .portfolio-image:nth-child(n+13) {
     display: none;
 }
 
-.portfolio .projects img {
-    width: 220px;
-    height: 187px;
-    margin-bottom: 20px;
-
-}
-
-.portfolio .projects img:hover {
+.portfolio-container .portfolio-image:hover {
     transform: scale(1.03);
     cursor: pointer;
 }
