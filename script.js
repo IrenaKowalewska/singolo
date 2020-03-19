@@ -34,3 +34,13 @@ PORTFOLIO_TAGS.addEventListener('click', event => {
       }
     }
   })
+
+PORTFOLIO.addEventListener('click', event => {
+  let target = event.target;
+  if (target.tagName == 'IMG') {
+      PORTFOLIO.querySelectorAll('img').forEach(item => {
+          item.style.boxShadow = "none";
+      });
+      event.target.style.boxShadow = "0px 0px 0px 5px #F06C64";
+  }
+})
