@@ -455,15 +455,19 @@ nav ul li a:hover {
 	left: 25%;
 	overflow: hidden;
 	border: #2d303a solid 2px;
-	text-align: left;
-	background: #fff;
+    text-align: left;
+    color: #441e1c;
+	background: #ea676b;
 }
 .feedback .close-contact-btn {
     position: absolute;
     width: 90px;
     height: 37px;
 	bottom: 40%;
-	margin-left: 37%;
+    margin-left: 37%;
+    color: #441e1c;
+    background-color: #f48c8f;
+    cursor: pointer;
 }
 .input-name,
 .input-email,
@@ -505,8 +509,8 @@ nav ul li a:hover {
     height: 37px;
     margin-left: 527px;
     border-radius: 3px;
-    background-color: #0a9478;
-    color: #d7fcf5;
+    background-color: #a5342f;
+    color: #f48c8f;
     font-size: 12px;
     font-weight: 400; 
     border: none;
@@ -517,7 +521,7 @@ nav ul li a:hover {
     width: 95px;
     height: 42px;
     border-radius: 3px;
-    background-color: #053f33;
+    background-color: #441e1c;
     font-size: 14px;
     font-weight: 700; 
 }

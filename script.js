@@ -98,5 +98,42 @@ document.querySelector(".arrow-next").addEventListener('click', function () {
     }
 });
 
+const SUBMIT = document.getElementById('contact-btn');
+const CLOSE_SUBMIT = document.getElementById('close-contact-btn');
 
+document.querySelector('form').addEventListener('click', (e) =>{
+  event.preventDefault();
+})
+
+SUBMIT.addEventListener('click', event =>{
+  const SUBJECT = document.getElementById('subject').value.toString();
+  const PROJECT = document.getElementById('textarea').value.toString();
+  const NAME = document.getElementById('name').value;
+  const EMAIL = document.getElementById('email').value;
+  const VALID_NAME = validName(NAME);
+  const VALID_EMAIL = validEmail(EMAIL);
+  let theme = document.getElementById('subj-text');
+  let description = document.getElementById('proj-text');
+
+  if(VALID_NAME == true && VALID_EMAIL == true){
+    SUBJECT != "" ? theme.innerHTML = 'Тема: ' + SUBJECT : theme.innerHTML = 'Без темы';
+    PROJECT != "" ? description.innerHTML = 'Описание: ' + PROJECT : description.innerHTML ='Без описания';
+    document.getElementById('message-block').classList.remove('hidden');
+  }else{
+    if(VALID_NAME == false){
+      alert('Enter the NAME field correctly (NAME must start with a letter)');
+      return;
+    }
+    if(VALID_EMAIL == false) alert('Enter the EMAIL field correctly(Example: web@mail.com)');
+  }
+})
+function validName(name){
+ return /^[a-zA-Z]+[a-zA-Z0-9]+/.test(name);
+}
+function validEmail(email){
+  return /.+@[a-zA-Z1-9]+\.+[a-z]/.test(email);
+ }
+CLOSE_SUBMIT.addEventListener('click',(event => {
+  document.getElementById('message-block').classList.add('hidden');
+}));
 
