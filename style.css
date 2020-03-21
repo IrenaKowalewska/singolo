@@ -436,6 +436,35 @@ nav ul li a:hover {
     align-items: center;
 }
 
+.feedback .hidden {
+	display: none;
+}
+.feedback .message-block {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 2800px;
+	left: 0;
+	background: #0008;
+}
+.feedback .message {
+    position: absolute;
+    width: 30%;
+	height: 30%;
+	top: 20%;
+	left: 25%;
+	overflow: hidden;
+	border: #2d303a solid 2px;
+	text-align: left;
+	background: #fff;
+}
+.feedback .close-contact-btn {
+    position: absolute;
+    width: 90px;
+    height: 37px;
+	bottom: 40%;
+	margin-left: 37%;
+}
 .input-name,
 .input-email,
 .input-subject {
