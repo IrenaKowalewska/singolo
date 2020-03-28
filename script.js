@@ -1,8 +1,59 @@
-const HEADER_NAV = document.getElementById('header-nav');
+const MENU = document.getElementById('header-nav');
 
-HEADER_NAV.addEventListener('click', (event) => {
-    HEADER_NAV.querySelectorAll('a').forEach(el => el.classList.remove('header-active'));
-    event.target.classList.add('header-active');
+MENU.addEventListener('click', (event) => {
+  MENU.querySelectorAll('.header-item').forEach(element => element.classList.remove('header-active')); 
+
+  if(~event.target.className.indexOf('header-item', 0)) 
+	event.target.classList.add('header-active');  
+});
+
+const LINK_MENU = document.getElementById('home'); 
+const LINK_SERVICES =  document.getElementById('services');
+const LINK_PORTFOLIO = document.getElementById('portfolio');
+const LINK_ABOUT = document.getElementById('about');
+const LINK_CONTACT = document.getElementById('contact');
+
+
+LINK_MENU.addEventListener('click', (event) => {
+	window.scrollTo(0,0);
+});
+
+LINK_SERVICES.addEventListener('click', (event) => {
+	window.scrollTo(0, 650);
+});
+
+LINK_PORTFOLIO.addEventListener('click', (event) => {
+	window.scrollTo(0, 1170);
+});
+
+LINK_ABOUT.addEventListener('click', (event) => {
+	window.scrollTo(0, 2000);
+});
+
+LINK_CONTACT.addEventListener('click', (event) => {
+	window.scrollTo(0, 2733);
+});
+
+window.addEventListener('scroll', function() {
+  let scroll = window.pageYOffset; 
+ 
+  MENU.querySelectorAll('a').forEach(element => element.classList.remove('header-active')); 
+  
+  if (scroll < 600) { 
+   LINK_MENU.classList.add('header-active');    
+  }
+  else if (scroll >= 650 && scroll < 1170) {
+   LINK_SERVICES.classList.add('header-active');
+  }
+  else if (scroll >= 1170 && scroll < 2000) {
+   LINK_PORTFOLIO.classList.add('header-active');
+  }
+  else if (scroll >= 2000 && scroll < 2733) {
+   LINK_ABOUT.classList.add('header-active');
+  }
+  else if (scroll >= 2733) {
+   LINK_CONTACT.classList.add('header-active');
+  }
 });
 
 const PORTFOLIO = document.getElementById('portfolio-images');
@@ -98,42 +149,35 @@ document.querySelector(".arrow-next").addEventListener('click', function () {
     }
 });
 
-const SUBMIT = document.getElementById('contact-btn');
-const CLOSE_SUBMIT = document.getElementById('close-contact-btn');
 
-document.querySelector('form').addEventListener('click', (e) =>{
+
+const FORM = document.getElementById("form");
+const BUTTON = document.getElementById('contact-btn'); 
+const MESSAGE_BLOCK = document.getElementById('message-block'); 
+const BUTTON_OK = document.getElementById('close-contact-btn');  
+
+
+FORM.addEventListener('submit', function(){
+  
   event.preventDefault();
-})
-
-SUBMIT.addEventListener('click', event =>{
-  const SUBJECT = document.getElementById('subject').value.toString();
-  const PROJECT = document.getElementById('textarea').value.toString();
-  const NAME = document.getElementById('name').value;
-  const EMAIL = document.getElementById('email').value;
-  const VALID_NAME = validName(NAME);
-  const VALID_EMAIL = validEmail(EMAIL);
-  let theme = document.getElementById('subj-text');
-  let description = document.getElementById('proj-text');
-
-  if(VALID_NAME == true && VALID_EMAIL == true){
-    SUBJECT != "" ? theme.innerHTML = 'Тема: ' + SUBJECT : theme.innerHTML = 'Без темы';
-    PROJECT != "" ? description.innerHTML = 'Описание: ' + PROJECT : description.innerHTML ='Без описания';
-    document.getElementById('message-block').classList.remove('hidden');
-  }else{
-    if(VALID_NAME == false){
-      alert('Enter the NAME field correctly (NAME must start with a letter)');
-      return;
-    }
-    if(VALID_EMAIL == false) alert('Enter the EMAIL field correctly(Example: web@mail.com)');
-  }
-})
-function validName(name){
- return /^[a-zA-Z]+[a-zA-Z0-9]+/.test(name);
-}
-function validEmail(email){
-  return /.+@[a-zA-Z1-9]+\.+[a-z]/.test(email);
- }
-CLOSE_SUBMIT.addEventListener('click',(event => {
+  document.getElementById('message-block').classList.remove('hidden'); 
+  document.getElementById('message-block-bg').classList.remove('hidden'); 
+  
+  const SUBJECT = document.getElementById('subject').value.toString(); 
+  const DESCRIBE = document.getElementById('textarea').value.toString(); 
+  
+  if (SUBJECT)
+  document.getElementById('subj-text').innerText = `Тема: ${SUBJECT}`; 
+  else 
+  document.getElementById('subject').innerText = 'Без темы';
+   
+  if (DESCRIBE)
+  document.getElementById('proj-text').innerText = `Описание: ${DESCRIBE}`;
+  else
+  document.getElementById('textarea').innerText = 'Без описания';
+  
+});
+BUTTON_OK.addEventListener('click',(event => {
   document.getElementById('message-block').classList.add('hidden');
-}));
-
+  document.getElementById('message-block-bg').classList.add('hidden');
+}))
