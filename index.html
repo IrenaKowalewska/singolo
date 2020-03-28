@@ -44,10 +44,10 @@
                         <div class="slides">
                           <div class="slide active-slide" data-bgColor="#f06c64" style="justify-content: space-between;">
                             <div class="iphone-vertical">
-                                <img src="assets/img/iPhone_Vertical.png" alt="iPhone_Vertical">
+                                <img src="assets/img/iPhone_Vertical.png" alt="iPhone_Vertical" class="vertical">
                             </div>
                             <div class="iphone-horizontal">
-                              <img src="assets/img/iPhone_Horizontal.png" alt="iPhone_Horizontal">
+                              <img src="assets/img/iPhone_Horizontal.png" alt="iPhone_Horizontal" class="horizontal">
                             </div>
                           </div>
                           <div class="slide" data-bgColor="#648bf0">
@@ -205,7 +205,7 @@
                 <div class="form-descr">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</div>
                     <div class="feedback-form">
                         <div class="feedback-form-wrapper">
-                            <form class="form-in-touch" id="form">
+                            <form class="form-in-touch">
                                 <fieldset class="fieldset">
                                     <input type="text" class="input-name" name="name" id="name" placeholder="Name (Required)" required pattern="^[a-zA-Z]+$">
                                     <input type="text" class="input-email" name="email" id="email" placeholder="Email (Required)" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
@@ -214,7 +214,6 @@
                                 </fieldset>
                                 <button class="button-submit" id="contact-btn" type="submit">SUBMIT</button>
                             </form>
-                            <div id="message-block-bg" class="message-block-bg hidden"></div>
                             <div id="message-block" class="message-block hidden">
                                 <div id="message" class="message">
                                   <p>Письмо отправлено</p>
@@ -256,6 +255,7 @@
                 </div>
             </div>
         </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,4 +1,6 @@
+
 const MENU = document.getElementById('header-nav');
+
 
 MENU.addEventListener('click', (event) => {
   MENU.querySelectorAll('.header-item').forEach(element => element.classList.remove('header-active')); 
@@ -182,20 +184,3 @@ BUTTON_OK.addEventListener('click',(event => {
   document.getElementById('message-block-bg').classList.add('hidden');
 }));
 
-window.addEventListener('DOMContentLoaded', () => {
-  const menu = document.querySelector('.header-nav'),
-  menuItem = document.querySelectorAll('.header-item'),
-  hamburger = document.querySelector('.hamburger');
-
-  hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('hamburger-active');
-      menu.classList.toggle('header-active');
-  });
-
-  menuItem.forEach(item => {
-      item.addEventListener('click', () => {
-          hamburger.classList.toggle('hamburger-active');
-          menu.classList.toggle('header-active');
-      })
-  })
-})
