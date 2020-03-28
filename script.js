@@ -180,4 +180,22 @@ FORM.addEventListener('submit', function(){
 BUTTON_OK.addEventListener('click',(event => {
   document.getElementById('message-block').classList.add('hidden');
   document.getElementById('message-block-bg').classList.add('hidden');
-}))
+}));
+
+window.addEventListener('DOMContentLoaded', () => {
+  const menu = document.querySelector('.header-nav'),
+  menuItem = document.querySelectorAll('.header-item'),
+  hamburger = document.querySelector('.hamburger');
+
+  hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('hamburger-active');
+      menu.classList.toggle('header-active');
+  });
+
+  menuItem.forEach(item => {
+      item.addEventListener('click', () => {
+          hamburger.classList.toggle('hamburger-active');
+          menu.classList.toggle('header-active');
+      })
+  })
+})

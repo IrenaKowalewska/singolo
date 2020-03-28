@@ -54,6 +54,10 @@ header .wrapper {
     color: #f06c64;
 }
 
+.hamburger {
+    display: none;
+}
+	
 nav ul {
     display: flex;
     padding: 0;
@@ -447,14 +451,28 @@ nav ul li a:hover {
 .feedback .hidden {
 	display: none;
 }
+
+.message-block-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background-color: black;
+    z-index: 120;
+}
+
 .feedback .message-block {
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	top: 2800px;
 	left: 0;
-	background: #0008;
+    background: #0008;
+    z-index: 121;
 }
+
 .feedback .message {
     position: absolute;
     width: 30%;
@@ -467,6 +485,7 @@ nav ul li a:hover {
     color: #441e1c;
 	background: #ea676b;
 }
+
 .feedback .close-contact-btn {
     position: absolute;
     width: 90px;
@@ -662,5 +681,14 @@ nav ul li a:hover {
         width: 768px;
         left: 0px;
         top: 0px;
+    }
+}
+
+@media (max-width 576px) {
+    .hamburger-active > span:nth-child(1){
+        transform: translateY(5px) rotate(-45deg)
+    }
+    .hamburger-active > span:nth-child(3){
+        transform: translateY(5px) rotate(45deg)
     }
 }
