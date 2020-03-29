@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Singolo</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
@@ -10,31 +11,31 @@
 </head>
 <body>
     <header class = "header">
-        <div class="container-fixed">
             <div class="container">
-                <div class="wrapper">
-                    <div class="logo"><h1>SINGOLO<span>*</span></h1></div>
-                    <nav id="header-nav">
-                        <ul>
-                            <li > <a  class="header-item header-active" id="home">HOME </a> </li>
-                            <li class="drop">·</li>
-                            <li> <a class="header-item" id= 'services'>SERVICES</a> </li>
-                            <li class="drop">·</li>
-                            <li> <a class="header-item" id= 'portfolio'>PORTFOLIO</a> </li>
-                            <li class="drop">·</li>
-                            <li> <a class="header-item" id= 'about'>ABOUT</a> </li>
-                            <li class="drop">·</li>
-                            <li> <a class="header-item" id= 'contact'>CONTACT</a> </li>
-                        </ul>
-                        <div class="hamburger">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </nav>
+                <div class="container-fixed">
+                    <div class="wrapper">
+                        <div class="logo"><h1>SINGOLO<span>*</span></h1></div>
+                        <nav id="header-nav">
+                            <ul>
+                                <li > <a  class="header-item header-active" id="home">HOME </a> </li>
+                                <li class="drop">·</li>
+                                <li> <a class="header-item" id= 'services'>SERVICES</a> </li>
+                                <li class="drop">·</li>
+                                <li> <a class="header-item" id= 'portfolio'>PORTFOLIO</a> </li>
+                                <li class="drop">·</li>
+                                <li> <a class="header-item" id= 'about'>ABOUT</a> </li>
+                                <li class="drop">·</li>
+                                <li> <a class="header-item" id= 'contact'>CONTACT</a> </li>
+                            </ul>
+                            <div class="hamburger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </nav>
+                    </div>
                 </div>
             </div>
-        </div> 
     </header>
         <main>
             <section class="carousel">
@@ -205,15 +206,16 @@
                 <div class="form-descr">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</div>
                     <div class="feedback-form">
                         <div class="feedback-form-wrapper">
-                            <form class="form-in-touch">
+                            <form class="form-in-touch" id="form">
                                 <fieldset class="fieldset">
-                                    <input type="text" class="input-name" name="name" id="name" placeholder="Name (Required)" required pattern="^[a-zA-Z]+$">
+                                    <input type="text" class="input-name" name="name" id="name" placeholder="Name (Required)" required pattern="^^[a-zA-ZА-Яа-я][a-zA-ZА-Яа-я-_\.\s]{1,20}$">
                                     <input type="text" class="input-email" name="email" id="email" placeholder="Email (Required)" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                                     <input type="text" class="input-subject" name="subject" id="subject" placeholder="Subject">
                                     <textarea class="textarea" name="textarea" id="textarea" placeholder="Describe your project in detail..."></textarea>
                                 </fieldset>
                                 <button class="button-submit" id="contact-btn" type="submit">SUBMIT</button>
                             </form>
+                            <div id="message-block-bg" class="message-block-bg hidden"></div>
                             <div id="message-block" class="message-block hidden">
                                 <div id="message" class="message">
                                   <p>Письмо отправлено</p>

@@ -171,16 +171,19 @@ FORM.addEventListener('submit', function(){
   if (SUBJECT)
   document.getElementById('subj-text').innerText = `Тема: ${SUBJECT}`; 
   else 
-  document.getElementById('subject').innerText = 'Без темы';
+  document.getElementById('subj-text').innerText = 'Без темы';
    
   if (DESCRIBE)
   document.getElementById('proj-text').innerText = `Описание: ${DESCRIBE}`;
   else
-  document.getElementById('textarea').innerText = 'Без описания';
+  document.getElementById('proj-text').innerText = 'Без описания';
   
 });
 BUTTON_OK.addEventListener('click',(event => {
+  document.getElementById('subj-text').innerText = "";
+  document.getElementById('proj-text').innerText = "";
   document.getElementById('message-block').classList.add('hidden');
   document.getElementById('message-block-bg').classList.add('hidden');
+  FORM.reset();
 }));
 
