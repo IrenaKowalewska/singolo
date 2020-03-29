@@ -23,7 +23,7 @@ header {
 
 .container-fixed {
     position: fixed;
-    width: 80%;
+    width: 100%;
     background-color: #2d303a;
     z-index: 100;
 }
@@ -97,7 +97,7 @@ nav ul li a:hover {
 }
 
 .carousel-content {
-  height: 600px;
+  height: 782px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -475,7 +475,7 @@ nav ul li a:hover {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	top: 2800px;
+	top: 2870px;
 	left: 0;
     background: #0008;
     z-index: 121;

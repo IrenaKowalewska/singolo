@@ -21,19 +21,19 @@ LINK_MENU.addEventListener('click', (event) => {
 });
 
 LINK_SERVICES.addEventListener('click', (event) => {
-	window.scrollTo(0, 650);
+	window.scrollTo(0, 740);
 });
 
 LINK_PORTFOLIO.addEventListener('click', (event) => {
-	window.scrollTo(0, 1170);
+	window.scrollTo(0, 1250);
 });
 
 LINK_ABOUT.addEventListener('click', (event) => {
-	window.scrollTo(0, 2000);
+	window.scrollTo(0, 2120);
 });
 
 LINK_CONTACT.addEventListener('click', (event) => {
-	window.scrollTo(0, 2733);
+	window.scrollTo(0, 2870);
 });
 
 window.addEventListener('scroll', function() {
@@ -41,19 +41,19 @@ window.addEventListener('scroll', function() {
  
   MENU.querySelectorAll('a').forEach(element => element.classList.remove('header-active')); 
   
-  if (scroll < 600) { 
+  if (scroll < 740) { 
    LINK_MENU.classList.add('header-active');    
   }
-  else if (scroll >= 650 && scroll < 1170) {
+  else if (scroll >= 740 && scroll < 1250) {
    LINK_SERVICES.classList.add('header-active');
   }
-  else if (scroll >= 1170 && scroll < 2000) {
+  else if (scroll >= 1250 && scroll < 2120) {
    LINK_PORTFOLIO.classList.add('header-active');
   }
-  else if (scroll >= 2000 && scroll < 2733) {
+  else if (scroll >= 2120 && scroll < 2870) {
    LINK_ABOUT.classList.add('header-active');
   }
-  else if (scroll >= 2733) {
+  else if (scroll >= 2870) {
    LINK_CONTACT.classList.add('header-active');
   }
 });
