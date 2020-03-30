@@ -205,42 +205,47 @@
             <section class="feedback" id="contact">
                 <div class="container">
                     <div class="form-title">Get a Quote</div>
-                <div class="form-descr">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</div>
+                    <div class="form-descr">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</div>
                     <div class="feedback-form">
-                        <div class="feedback-form-wrapper">
-                            <form class="form-in-touch" id="form">
-                                <fieldset class="fieldset">
-                                    <input type="text" class="input-name" name="name" id="name" placeholder="Name (Required)" required pattern="^^[a-zA-ZА-Яа-я][a-zA-ZА-Яа-я-_\.\s]{1,20}$">
-                                    <input type="text" class="input-email" name="email" id="email" placeholder="Email (Required)" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-                                    <input type="text" class="input-subject" name="subject" id="subject" placeholder="Subject">
-                                    <textarea class="textarea" name="textarea" id="textarea" placeholder="Describe your project in detail..."></textarea>
-                                </fieldset>
-                                <button class="button-submit" id="contact-btn" type="submit">SUBMIT</button>
-                            </form>
-                            <div id="message-block-bg" class="message-block-bg hidden"></div>
-                            <div id="message-block" class="message-block hidden">
-                                <div id="message" class="message">
-                                  <p>Письмо отправлено</p>
-                                  <p><span id="subj-text">Без темы</span></p>
-                                  <p><span id="proj-text">Без описания</span></p>
-                                </div>
-                                <button type="submit" id="close-contact-btn" class="close-contact-btn">OK</button>
-                              </div>
+                        <form class="form-in-touch" id="form">
+                            <input type="text" class="input-name" name="name" id="name" placeholder="Name (Required)" required pattern="^^[a-zA-ZА-Яа-я][a-zA-ZА-Яа-я-_\.\s]{1,20}$">
+                            <input type="text" class="input-email" name="email" id="email" placeholder="Email (Required)" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                            <input type="text" class="input-subject" name="subject" id="subject" placeholder="Subject">
+                            <textarea class="textarea" name="textarea" id="textarea" placeholder="Describe your project in detail..."></textarea>
+                            <div class="submit">
+                                <button class="button-submit" id="contact-btn" type="submit" value="Submit">SUBMIT</button>
+                            </div>
+                        </form>
+                        <div id="message-block-bg" class="message-block-bg hidden"></div>
+                        <div id="message-block" class="message-block hidden">
+                            <div id="message" class="message">
+                              <p>Письмо отправлено</p>
+                              <p><span id="subj-text">Без темы</span></p>
+                              <p><span id="proj-text">Без описания</span></p>
+                            </div>
+                            <button type="submit" id="close-contact-btn" class="close-contact-btn">OK</button>
                         </div>
                         <div class="contact-information">
-                            <p class="information-title">Contact Information</p>
-                                <p class="information-text">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
-                                <div class="contact">
-                                <div class="contact-img">
-                                    <div class="location"><img src="assets/img/img-form/location.png" alt="location"></div>
-                                    <div class="phone"><a href="tel:035283318635" class="phone-link"><img src="assets/img/img-form/phone.png" alt="phone"></a></div>
-                                    <div class="mail"><a href="mailto:info@singolo.com" class="mail-link"><img src="assets/img/img-form/mail.png" alt="mail"></a></div>
+                            <h3 class="contact-title">Contact Information</h3>
+                            <p class="contact-text">Quisque hendrerit purus dapibus, ornare nibh vitae, viver-<br>
+                                ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat<br>
+                                libero. Nulla sed nunc et tortor luctus faucibus. Morbi at<br>
+                                 aliquet turpis, et consequat felis.</p>
+                            <div class="contact-block">
+                                <div class="contact-link location">
+                                    <a href="#">
+                                        <img src="assets/img/img-form/location.png" alt="location"><p>Elm St. 14/05 Lost City </p>
+                                    </a>
                                 </div>
-                            <div class="contact-info">
-                                <p class="adress"> Elm St. 14/05 Lost City </p>
-                                <p class="tel-number">03528&nbsp331&nbsp86&nbsp35</p>
-                                <p class="email">info@singolo.com</p></div>
-                            </div>
+                                <div class="contact-link tel">
+                                <a href="tel:035283318635"><img src="assets/img/img-form/phone.png" alt="phone"><p>03528 331 86 35</p> </a>
+                                </div>
+                                <div class="contact-link mail">
+                                    <a href="mailto:info@singolo.com">
+                                        <img src="assets/img/img-form/mail.png" alt="mail"><p>info@singolo.com</p>
+                                    </a>
+                                </div>
+                            </div> 
                         </div>
                     </div>
                 </div>
